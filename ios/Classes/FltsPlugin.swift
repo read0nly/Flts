@@ -63,10 +63,6 @@ public class FltsPlugin: NSObject, FlutterPlugin {
 //            params.timeInterval = 3
 //            params.isReportWhenEnterBackgroundEnabled = true
 //            params.isReportWhenAPPLaunchEnabled = false
-
-            // 初始化打印日志级别（默认.off）
-            LTSSDK.setLogLevel(.off)
-            // LTS初始化方法
             let lts = LTSSDK(config:params)
             FltsPlugin.lts = lts
             print("初始化LTSSDK 成功：\(params.region)")

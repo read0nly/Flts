@@ -63,8 +63,6 @@ class FltsPlugin : FlutterPlugin, MethodCallHandler {
             .setAccessKey(arguments["accessKey"] ?: "")  // 华为云访问密钥
             .setSecretKey(arguments["secretKey"] ?: "")  // 华为云秘密访问秘钥
             .build()
-
-        LTSSDK.setLogLevel(LogLevel.OFF)
         var lts = LTSSDK(mContext!!, userConfig)
         if (lts.isInitialized) {
             print("LTSSDK isInitialized:true");
