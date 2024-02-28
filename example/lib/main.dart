@@ -41,11 +41,7 @@ class _MyAppState extends State<MyApp> {
                 onPressed: () {
                   LTSConfig config = LTSConfig(
                     region: "cn-north-4",
-                    projectId: "06a466459100105c2feac01ded5cb953",
-                    groupId: "66a427eb-b4d9-47db-a815-11fe426593b3",
-                    streamId: "9882be8e-c92c-49c9-88a3-6e95caafced5",
-                    accessKey: "IJE5X178OWCLCVKHUN7D",
-                    secretKey: "ZZIcw0bxkZwusuNhNUPRKYGu6VEEX9MJuy3TZHex",
+
                   );
                   _fltsPlugin.initLts(config);
                   _fltsPlugin.setLocalLogLevel(LTSLogLevel.DEBUG);
