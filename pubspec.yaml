@@ -1,7 +1,8 @@
 name: flts
 description: A new Flutter project.
 version: 0.0.1
-homepage:
+author: cc <nj.readonly@gmail.com>
+homepage: https://github.com/read0nly/Flts
 
 environment:
   sdk: '>=3.0.2 <4.0.0'
