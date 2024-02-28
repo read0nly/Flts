@@ -1,7 +1,7 @@
 name: flts
 description: A flutter plugin wrapper for huawei lts.
 version: 0.0.4
-author: cc <nj.readonly@gmail.com>
+author: cc<nj.readonly@gmail.com>
 homepage: https://github.com/read0nly/Flts
 
 environment:
