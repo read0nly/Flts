@@ -7,3 +7,6 @@
 
 ## version: 0.0.5
 *   add s.static_framework = true
+
+## version: 0.0.6
+*   export models

@@ -2,6 +2,9 @@ import 'flts_platform_interface.dart';
 import 'models/log_level.dart';
 import 'models/lts_config.dart';
 import 'models/lts_log.dart';
+export 'models/lts_log.dart';
+export 'models/lts_config.dart';
+export 'models/lts_log.dart';
 
 class Flts {
   Future<bool?> initLts(LTSConfig config) {
