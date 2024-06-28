@@ -16,7 +16,7 @@ A new Flutter project.
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
   s.platform = :ios, '11.0'
-  s.dependency 'LTSSDK'
+  s.dependency 'LTSSDK', '1.0.26'
   s.static_framework = true
 
   # Flutter.framework does not contain a i386 slice.

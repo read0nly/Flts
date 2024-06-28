@@ -4,7 +4,6 @@ import android.app.Application
 import androidx.annotation.NonNull
 import com.cloud.LTSSDK
 import com.cloud.UserConfig
-import com.cloud.util.log.LogLevel
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
@@ -72,26 +71,26 @@ class FltsPlugin : FlutterPlugin, MethodCallHandler {
 
     private fun setLocalLogLevel(@NonNull call: MethodCall, @NonNull result: Result) {
         var levelName = call.arguments as? String ?: return
-        var level: kotlin.Int = LogLevel.OFF
+        var level = com.cloud.lts.LTSSDK.LogLevel.OFF
         when (levelName) {
             "DEBUG" -> {
-                level = LogLevel.DEBUG
+                level = com.cloud.lts.LTSSDK.LogLevel.DEBUG
             }
 
             "ERROR" -> {
-                level = LogLevel.ERROR
+                level = com.cloud.lts.LTSSDK.LogLevel.ERROR
             }
 
             "INFO" -> {
-                level = LogLevel.INFO
+                level = com.cloud.lts.LTSSDK.LogLevel.INFO
             }
 
             "OFF" -> {
-                level = LogLevel.OFF
+                level = com.cloud.lts.LTSSDK.LogLevel.OFF
             }
 
             "WARNING" -> {
-                level = LogLevel.WARNING
+                level = com.cloud.lts.LTSSDK.LogLevel.WARNING
             }
         }
         LTSSDK.setLogLevel(level)

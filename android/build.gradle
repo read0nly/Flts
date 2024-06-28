@@ -47,7 +47,7 @@ android {
     }
 
     dependencies {
-        api 'io.github.lts-sdk:lts-sdk-android:1.0.21'
+        api 'io.github.lts-sdk:lts-sdk-android:1.0.26'
         testImplementation 'org.jetbrains.kotlin:kotlin-test'
         testImplementation 'org.mockito:mockito-core:5.0.0'
     }
